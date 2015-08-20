@@ -64,10 +64,10 @@ A WPF control library, provides a set of controls which can create edit form or 
 	}
 
 Use Form control, it will create edit view below dynamically.
-！[Entity Form view](/docimages/form.png) 
+![Entity Form view](/docimages/form.png) 
 
 Use Query Control, it will create view below dynamically
-！[Entity search view](/docimages/query.png) 
+![Entity search view](/docimages/query.png) 
 
 ##Entity annotation sheet
 
@@ -129,7 +129,7 @@ Use Query Control, it will create view below dynamically
 	}
 
 ##Create Query Window
-Check file QueryGoods.xaml
+Check file [/src/WarehouseMgr/WarehouseOperation/QueryGoods.xaml](/src/WarehouseMgr/WarehouseOperation/QueryGoods.xaml)
 
 ##Extend Edit control (row)
-Check files under WarehouseMgr/Controls/Address folder
+Check files under [/src/WarehouseMgr/Controls/Address](/src/WarehouseMgr/Controls/Address) folder
