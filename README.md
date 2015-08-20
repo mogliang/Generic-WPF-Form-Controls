@@ -1,4 +1,4 @@
-﻿#Generic Form Control Library
+#Generic WPF Form Controls Library
 A WPF control library, provides a set of controls which can create edit form or query control based on target entity’s annotation attributes. It can work best with Entity framework code first design, see entity below:
 	
 	public class User
@@ -80,7 +80,8 @@ Use Query Control, it will create view below dynamically
 |All validation attribute|Validate the target field before submit|
 |[UIHint("<control name>")]|Reserved for extend input controls|
 
-##Create Edit Form(Sample code)
+##Create Edit Form
+See sample code below:
 
 	public Control CallUpdateUserControl(User user, Action<User> updateCallback=null)
 	{
