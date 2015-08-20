@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseMgr", "WarehouseMgr\WarehouseMgr.csproj", "{90DF365C-8F75-4836-AD01-054EFE9EE19B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormControlLib", "FormControlLib\FormControlLib.csproj", "{BB5EF5F3-572B-422A-8999-5561D475E658}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse.DataModel", "Warehouse.DataModel\Warehouse.DataModel.csproj", "{D4CA9CD4-3015-4E08-8676-11DB43F0D0C2}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mogdev.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FormControlLib\\FormControlLib.csproj
+		SccProjectName1 = FormControlLib
+		SccLocalPath1 = FormControlLib
+		SccProjectUniqueName2 = WarehouseMgr\\WarehouseMgr.csproj
+		SccProjectName2 = WarehouseMgr
+		SccLocalPath2 = WarehouseMgr
+		SccProjectUniqueName3 = Warehouse.DataModel\\Warehouse.DataModel.csproj
+		SccProjectName3 = Warehouse.DataModel
+		SccLocalPath3 = Warehouse.DataModel
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90DF365C-8F75-4836-AD01-054EFE9EE19B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90DF365C-8F75-4836-AD01-054EFE9EE19B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90DF365C-8F75-4836-AD01-054EFE9EE19B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90DF365C-8F75-4836-AD01-054EFE9EE19B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB5EF5F3-572B-422A-8999-5561D475E658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB5EF5F3-572B-422A-8999-5561D475E658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB5EF5F3-572B-422A-8999-5561D475E658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB5EF5F3-572B-422A-8999-5561D475E658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4CA9CD4-3015-4E08-8676-11DB43F0D0C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4CA9CD4-3015-4E08-8676-11DB43F0D0C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4CA9CD4-3015-4E08-8676-11DB43F0D0C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4CA9CD4-3015-4E08-8676-11DB43F0D0C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

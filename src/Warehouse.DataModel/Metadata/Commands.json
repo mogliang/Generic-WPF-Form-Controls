@@ -1,0 +1,68 @@
+﻿{
+    Commands: [
+        {
+            Name: "USER_MGMT",
+            Permissions: [ "Admin" ],
+            Commands: [
+                { Name: "USER_EDIT_DELETE" },
+                { Name: "USER_NEW" }
+            ]
+        },
+        {
+            Name: "WAREHOUSE_MGMT",
+            Permissions: [ "Admin" ],
+            Commands: [
+                { Name: "WAREHOUSE_MAP" }
+            ]
+        },
+        {
+            Name: "GOODS_OPERATION",
+            Permissions: [ "Admin", "Operator" ],
+            Commands: [
+                { Name: "PRODUCT_ADD" },
+                {
+                    Name: "PRODUCT_EDIT_DELETE",
+                    Permissions: [ "Admin", "Operator", "User" ]
+                },
+                { Name: "TAG_EDIT" }
+            ]
+        },
+        {
+            Name: "WAREHOUSE_OPERATION",
+            Permissions: [ "Admin", "Operator" ],
+            Commands: [
+                { Name: "WAREHOUSE_INBOUND" },
+                { Name: "WAREHOUSE_OUTBOUND" },
+                { Name: "WAREHOUSE_BORROW" },
+                { Name: "WAREHOUSE_RETURN_QUERY" },
+                {
+                    Name: "WAREHOUSE_OPERATION_QUERY",
+                    Permissions: [ "Admin", "Operator", "User" ]
+                },
+                {
+                    Name: "GOODS_QUERY",
+                    Permissions: [ "Admin", "Operator", "User" ]
+                }
+            ]
+        },
+        {
+            Name: "CUSTOMER_MGMT",
+            Permissions: [ "Admin", "Operator" ],
+            Commands: [
+                { Name: "CUSTOMER_ADD" },
+                { Name: "CUSTOMER_EDIT_MGMT" },
+                {
+                    Name: "CUSTOMER_QUERY",
+                    Permissions: [ "Admin", "Operator", "User" ]
+                }
+            ]
+        },
+        {
+            Name: "AUDIT",
+            Permissions: [ "Admin" ],
+            Commands: [
+                { Name: "LOG_QUERY" }
+            ]
+        }
+    ]
+}

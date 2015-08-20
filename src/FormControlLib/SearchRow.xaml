@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="FormControlLib.SearchRow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+			 xmlns:ut="clr-namespace:FormControlLib.Utilites"
+             d:DesignHeight="50" d:DesignWidth="300">
+	<UserControl.Resources>
+		<ut:EnumConverter x:Key="converter"/>
+	</UserControl.Resources>
+    <Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="auto"/>
+			<ColumnDefinition Width="80"/>
+			<ColumnDefinition Width="150"/>
+			<ColumnDefinition Width="120"/>
+			<ColumnDefinition Width="auto"/>
+		</Grid.ColumnDefinitions>
+		<!--<StackPanel Name="commandpanel" Orientation="Horizontal">
+			<Button Name="remove_bn" Click="remove_click"/>
+		</StackPanel>-->
+		<Border Grid.Column="1">
+			<ComboBox Name="logic_cb" SelectedValuePath="Value" DisplayMemberPath="Name"/>
+		</Border>
+		<Border Grid.Column="2">
+			<ComboBox Name="field_cb" SelectedValuePath="Value" DisplayMemberPath="Name" SelectionChanged="filed_changed"/>
+		</Border>
+		<Border Grid.Column="3">
+			<ComboBox Name="operator_cb" SelectedValuePath="Value" DisplayMemberPath="Name"/>
+		</Border>
+		<Border Name="input_br" Grid.Column="4">
+		</Border>
+    </Grid>
+</UserControl>

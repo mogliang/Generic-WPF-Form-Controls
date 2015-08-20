@@ -1,0 +1,23 @@
+﻿<Application x:Class="WarehouseMgr.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:ut="clr-namespace:WarehouseMgr.Utilites"
+             xmlns:fc="clr-namespace:FormControlLib.Utilites;assembly=FormControlLib"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary>
+                    <ut:AddressConverter x:Key="addrconverter"/>
+                    <fc:EnumConverter x:Key="enumconverter"/>
+                    <DataTemplate x:Key="addressTemplate">
+						<Border ToolTip="{Binding AddressCode,Converter={StaticResource addrconverter}}">
+							<TextBlock Text="{Binding AddressCode}"/>
+						</Border>
+					</DataTemplate>
+				</ResourceDictionary>
+				<ResourceDictionary Source="/WarehouseMgr;component/Dictionary1.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

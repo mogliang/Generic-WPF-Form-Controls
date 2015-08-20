@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="WarehouseMgr.ProductOperation.ManageTags"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="240"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<TreeView Name="tagtree" Grid.Row="1" SelectedItemChanged="treeview_selectionchanged"/>
+		<Grid Grid.Column="1" Grid.Row="1">
+			<StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"
+						Name="commandpanel">
+				<Button Name="addtaggroup_bn" Content="添加标签组" Click="addtaggroup_click" Style="{StaticResource samewidth_bn}"/>
+				<Button Name="addtag_bn" Content="添加子标签" Click="addtag_click" Style="{StaticResource samewidth_bn}" />
+				<Button Name="edittag_bn" Content="修改标签" Click="edittag_click" Style="{StaticResource samewidth_bn}"/>
+				<Button Name="edittaggroup_bn" Content="修改标签组" Click="editgroup_click" Style="{StaticResource samewidth_bn}"/>
+				<Button Name="deletetag_bn" Content="删除标签" Click="deltag_click" Style="{StaticResource samewidth_bn}"/>
+				<Button Name="deletetaggroup_bn" Content="删除标签组" Click="deltaggroup_click" Style="{StaticResource samewidth_bn}"/>
+			</StackPanel>
+			<Grid Name="formgrid"
+				  VerticalAlignment="Center"
+				  HorizontalAlignment="Center">
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Label Content="名称" Style="{StaticResource label_Label}"/>
+				<TextBox Name="name_tb" Text="{Binding Name,Mode=TwoWay}" Grid.Column="1" Style="{StaticResource editctl_TextBox}"/>
+				<StackPanel Orientation="Horizontal" Grid.Row="1" Grid.ColumnSpan="2">
+					<Button Content="保存" Name="confirm_bn"  Style="{StaticResource confirm_bn}" Click="confirm_click"/>
+					<Button Content="取消" Name="cancel_bn" Style="{StaticResource confirm_bn}" Click="cancel_click"/>
+				</StackPanel>
+			</Grid>
+		</Grid>
+    </Grid>
+</UserControl>

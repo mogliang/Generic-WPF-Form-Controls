@@ -1,0 +1,126 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Style TargetType="Label" x:Key="label_Label">
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="Margin" Value="8"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Width" Value="80"/>
+        <Setter Property="FontFamily" Value="Microsoft YaHei"/>
+	</Style>
+
+	<!--<Style TargetType="TextBox" x:Key="editctl_TextBox" BasedOn="{StaticResource base_Control}">-->
+	<Style TargetType="TextBox" x:Key="editctl_TextBox">
+		<Setter Property="Width" Value="200"/>
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="Margin" Value="8"/>
+		<Setter Property="FontSize" Value="16"/>
+		<Setter Property="FontFamily" Value="Microsoft YaHei"/>
+	</Style>
+
+	<Style TargetType="TextBlock" x:Key="validErr_TextBlock">
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="Margin" Value="8"/>
+		<Setter Property="FontSize" Value="16"/>
+		<Setter Property="Foreground" Value="Red"/>
+		<Setter Property="FontFamily" Value="Microsoft YaHei"/>
+	</Style>
+
+	<Style TargetType="DatePicker" x:Key="editctl_date">
+		<Setter Property="Width" Value="200"/>
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="Margin" Value="8"/>
+		<Setter Property="FontSize" Value="16"/>
+		<Setter Property="FontFamily" Value="Microsoft YaHei"/>
+	</Style>
+
+	<Style TargetType="PasswordBox" x:Key="editctl_pwd">
+		<Setter Property="Width" Value="200"/>
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="Margin" Value="8"/>
+		<Setter Property="FontSize" Value="16"/>
+		<Setter Property="FontFamily" Value="Microsoft YaHei"/>
+	</Style>
+	<Style TargetType="Control" x:Key="searchbase_control">
+		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="Margin" Value="8"/>
+		<Setter Property="FontSize" Value="16"/>
+		<Setter Property="FontFamily" Value="Microsoft YaHei"/>
+	</Style>
+	<Style TargetType="ComboBox" x:Key="editctl_combo">
+		<Setter Property="Width" Value="200"/>
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="Margin" Value="8"/>
+		<Setter Property="FontSize" Value="16"/>
+		<Setter Property="FontFamily" Value="Microsoft YaHei"/>
+		<Setter Property="ItemTemplate">
+			<Setter.Value>
+				<DataTemplate>
+					<Border>
+						<StackPanel>
+							<TextBlock Text="{Binding Name}"/>
+							<TextBlock Text="{Binding Description}" FontStyle="Italic" FontSize="12" Margin="4,0,0,0"/>
+						</StackPanel>
+					</Border>
+				</DataTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="Button" x:Key="confirm_bn">
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="Margin" Value="12,8,8,8"/>
+		<Setter Property="Padding" Value="16,8,16,8"/>
+		<Setter Property="FontSize" Value="16"/>
+		<Setter Property="FontFamily" Value="Microsoft YaHei"/>
+	</Style>
+	<Style TargetType="Control" x:Key="base_Control">
+		<Setter Property="FontSize" Value="24"/>
+	</Style>
+	<Style TargetType="Border" x:Key="placeholder_br">
+		<Setter Property="Margin" Value="8"/>
+		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+		<Setter Property="VerticalAlignment" Value="Stretch"/>
+		<Setter Property="BorderBrush">
+			<Setter.Value>
+				<LinearGradientBrush SpreadMethod="Repeat" StartPoint="0,5" EndPoint="5,0" MappingMode="Absolute">
+					<LinearGradientBrush.GradientStops>
+						<GradientStop Color="Gray" Offset="0"/>
+						<GradientStop Color="Gray" Offset="0.2"/>
+						<GradientStop Color="Transparent" Offset="0.4"/>
+						<GradientStop Color="Transparent" Offset="0.6"/>
+						<GradientStop Color="Gray" Offset="0.8"/>
+						<GradientStop Color="Gray" Offset="1"/>
+					</LinearGradientBrush.GradientStops>
+				</LinearGradientBrush>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<Style TargetType="Button" x:Key="remove_bn">
+		<Setter Property="Content" Value="r"/>
+		<Setter Property="FontFamily" Value="Webdings"/>
+		<Setter Property="Foreground" Value="Red"/>
+		<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="BorderThickness" Value="0"/>
+		<Setter Property="BorderBrush" Value="Transparent"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="Margin" Value="8,0,0,0"/>
+	</Style>
+
+	<Style TargetType="Button" x:Key="addquery_bn">
+		<Setter Property="HorizontalAlignment" Value="Left"/>
+		<Setter Property="VerticalAlignment" Value="Center"/>
+		<Setter Property="Margin" Value="8,4,4,4"/>
+		<Setter Property="Padding" Value="4"/>
+		<Setter Property="FontSize" Value="12"/>
+		<Setter Property="FontFamily" Value="Microsoft YaHei"/>
+	</Style>
+</ResourceDictionary>

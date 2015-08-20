@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="WarehouseMgr.WarehouseOperation.QueryGoods"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:fc="clr-namespace:FormControlLib;assembly=FormControlLib"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="600">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="auto"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="auto"/>
+			<RowDefinition Height="7*"/>
+		</Grid.RowDefinitions>
+		<fc:SearchControl Grid.Column="0" Name="searchctl"/>
+		<Button Grid.Column="1" Style="{StaticResource query_bn}" Click="query_click" VerticalAlignment="Top"/>
+		<DataGrid Name="goodsgrid" Margin="0,8,0,0" Grid.Row="1" Grid.ColumnSpan="2" IsReadOnly="True" AutoGenerateColumns="False">
+
+		</DataGrid>
+	</Grid>
+</UserControl>

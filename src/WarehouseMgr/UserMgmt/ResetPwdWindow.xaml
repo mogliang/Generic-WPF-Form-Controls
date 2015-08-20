@@ -1,0 +1,39 @@
+﻿<Window x:Class="WarehouseMgr.UserMgmt.ResetPwdWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="重置密码" Height="280" Width="340">
+    <Grid>
+		<Border HorizontalAlignment="Center" VerticalAlignment="Center">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="auto"/>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+				
+				<Label Content="用户名" Style="{StaticResource label_Label}"/>
+				<TextBox IsReadOnly="True" Text="{Binding Username}" Grid.Column="1" Style="{StaticResource editctl_TextBox}"/>
+				<Label Content="新密码" Style="{StaticResource label_Label}" Grid.Row="1"/>
+				<PasswordBox Name="pwdbox1" Grid.Row="1" Grid.Column="1"  Style="{StaticResource editctl_Pwd}" PasswordChanged="pwd_changed"/>
+				<Label Content="重输密码" Style="{StaticResource label_Label}" Grid.Row="2"/>
+				<PasswordBox Name="pwdbox2" Grid.Row="2" Grid.Column="1" Style="{StaticResource editctl_Pwd}" PasswordChanged="pwd2_changed"/>
+				<StackPanel Grid.Row="3" Grid.ColumnSpan="3" Orientation="Horizontal">
+					<TextBlock Name="err_tb1" Text=" "  Style="{StaticResource validErr_TextBlock}"/>
+					<TextBlock Name="err_tb2" Style="{StaticResource validErr_TextBlock}"/>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Right">
+					<Button Content="确定修改" Style="{StaticResource confirm_bn}" IsDefault="True" Click="confirm_click"/>
+					<Button Content="取消" Style="{StaticResource confirm_bn}"  IsCancel="True"/>
+				</StackPanel>
+			</Grid>
+		</Border>
+    </Grid>
+</Window>
