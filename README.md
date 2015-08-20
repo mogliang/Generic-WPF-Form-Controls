@@ -63,7 +63,7 @@ A WPF control library, provides a set of controls which can create edit form or 
 		Admin = 3
 	}
 
-Use Form control, it will create edit view below dynamically.
+Use Form control, it will create edit view below dynamically
 ![Entity Form view](/docimages/form.png) 
 
 Use Query Control, it will create view below dynamically
@@ -132,5 +132,7 @@ See sample code below:
 ##Create Query Window
 Check file [/src/WarehouseMgr/WarehouseOperation/QueryGoods.xaml](/src/WarehouseMgr/WarehouseOperation/QueryGoods.xaml)
 
-##Extend Edit control (row)
-Check files under [/src/WarehouseMgr/Controls/Address](/src/WarehouseMgr/Controls/Address) folder
+##Extend Edit control
+Default field Edit controls include textbox, combobox, datepicker and passwordbox, users can extend the control set to meet special needs, see example below:
+![Address input control](/docimages/extend.png) 
+Check source code under [/src/WarehouseMgr/Controls/Address](/src/WarehouseMgr/Controls/Address) folder
