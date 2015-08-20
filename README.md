@@ -69,7 +69,7 @@ Use Form control, it will create edit view below dynamically
 Use Query Control, it will create view below dynamically
 ![Entity search view](/docimages/query.png) 
 
-##Entity annotation sheet
+##Entity Annotation attribute sheet
 
 |Attribute	|Function	|
 |-----------|-----------|
