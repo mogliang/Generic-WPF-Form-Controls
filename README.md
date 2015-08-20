@@ -86,7 +86,7 @@ See sample code below:
 	public Control CallUpdateUserControl(User user, Action<User> updateCallback=null)
 	{
 		var formControl = FormControlHelper.CreateFormControl();
-		// remove password
+		// **make sure Username is displayed**
 		formControl.DetermineFieldCreationCallback = (cx, s) =>
 		{
 			switch (cx.PropertyInfo.Name)
@@ -97,7 +97,8 @@ See sample code below:
 					return s;
 			}
 		};
-		// replace password edit control
+		// **replace password edit control**
+		// **Set Username field to readonly**
 		formControl.CreateControlCallback = (cx, c) =>
 		{
 			if (cx.ControlType == ControlType.Editable)
@@ -113,7 +114,7 @@ See sample code below:
 			}
 			return c;
 		};
-		// submit callback
+		// **submit callback**
 		formControl.SubmitCallback = (d) =>
 		{
 			using (var dbcontext = new WarehouseContext())
@@ -123,7 +124,7 @@ See sample code below:
 		};
 
 		formControl.RenderForm(user, false);
-		// customize submit button
+		// **customize submit button**
 		formControl.ConfirmButton.Content = "保存设置";
 
 		return formControl;
