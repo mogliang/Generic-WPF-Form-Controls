@@ -134,5 +134,7 @@ Check file [/src/WarehouseMgr/WarehouseOperation/QueryGoods.xaml](/src/Warehouse
 
 ##Extend Edit control
 Default field Edit controls include textbox, combobox, datepicker and passwordbox, users can extend the control set to meet special needs, see example below:
+
 ![Address input control](/docimages/extend.png) 
+
 Check source code under [/src/WarehouseMgr/Controls/Address](/src/WarehouseMgr/Controls/Address) folder
